@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+
+//    id ("com.google.devtools.ksp") version ("1.8.20-1.0.10")
 }
 
 android {
@@ -66,4 +68,9 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    //raamcosta navigation
+//    implementation("io.github.raamcosta.compose-destinations:animations-core:1.8.42-beta")
+//    ksp ("io.github.raamcosta.compose-destinations:ksp:1.8.42-beta")
+    implementation("androidx.navigation:navigation-compose:2.7.1")
 }
